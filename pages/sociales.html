@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TM Producciones</title>
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
-    <link rel="stylesheet" href="../CSS/bootstrap.css">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 
@@ -17,21 +17,38 @@
 
     <!--Empieza header-->    
 
+    <div class="bg-light">
+		<nav class="navbar navbar-expand-md navbar-light bg-light border-primary">
 
-    <header class="header" id="home">       
+            <div class="container">
+                <a href="#" class="navbar-brand"></a>
+                <img src="../images/logo.png" alt="logoTm" width="160" height="90">
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+
+			<div id="MenuNavegacion" class="collapse navbar-collapse">
+
+				<ul class="navbar-nav ms-3">
+					    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../index.html#Servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../index.html#Nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../index.html#Galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#Contacto">Contacto</a></li>
+				</ul>
+
+
+			</div>
+
+		</nav>
+
+	</div>
+
+
         
-        <img src="../images/logo.png" alt="Logo Tm Producciones" class="logo" > 
-        <nav class="navbar">
-            <ul>
-                <li><a href="../Index.html">Home</a></li>
-                <li><a href="../Index.html#Servicios">Servicios</a></li>
-                <li><a href="../Index.html#Nosotros">Nosotros</a></li>
-                <li><a href="../Index.html#Galeria">Galeria</a></li>
-                <li><a href="#Contacto">Contacto</a></li>     
-            </ul>
-        </nav>
-        <a  class="boton" href="https://wa.me/541151272233" target="_blank">Whatsapp</a>              
-    </header>
 
     <!--Termina header--> 
 
@@ -39,33 +56,33 @@
 
 <main class="main">   
     <section class="titulo">
-        <h1>TM Producciones.</h1>  
+        <h1 class="titulo__principal">TM Producciones.</h1>  
         <span>Creando experiencias únicas para que las disfrutes con nosotros</span>
 
     </section>
 
     <!--Empieza Sociales-->
 
-    <h2 id="Servicios" >Servicios</h2>
-        <section class="container">
+    <h2 id="sociales" >Sociales</h2>
+        <section class="service">
                                 
 
-            <div class="container__card">
-                <a href="./pages/Artistas.html">Casamientos
-                    <img src="../images/Servicios/artistas.jpg" alt="imagen-artistas">    
+            <div class="service__card">
+                <a href="./pages/artistas.html">Casamientos
+                    <img src="../images/servicios/artistas.jpg" alt="imagen-artistas">    
                 </a>
             </div>
             
-           <div class="container__card">
-            <a href="./pages/Sociales.html">Fiestas de 15
-                <img src="../images/Servicios/servicios.jpg" alt="imagen-sociales">
+           <div class="service__card">
+            <a href="./pages/sociales.html">Fiestas de 15
+                <img src="../images/servicios/servicios.jpg" alt="imagen-sociales">
             </a>
 
            </div>
 
-           <div class="container__card">
-            <a href="./pages/Corporativos.html">Catering
-                <img src="../images/Servicios/corporativos.jpg" alt="imagen-corporativos">
+           <div class="service__card">
+            <a href="./pages/corporativos.html">Catering
+                <img src="../images/servicios/corporativos.jpg" alt="imagen-corporativos">
             </a>
            </div>
         
