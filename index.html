@@ -7,7 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TM Producciones</title>
     <link rel="icon" type="image/x-icon" href="./images/logo.png">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- ANIMATE.CSS -->
+    <link    rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+
+    <!-- BS via CDN -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS only -->
     <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
@@ -20,35 +28,46 @@
     <!--Empieza header-->    
 
 
-    <div class="bg-light">
-		<nav class="navbar navbar-expand-md navbar-light bg-light border-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
-            <div class="container">
-                <a href="#" class="navbar-brand"></a>
-                <img src="./images/logo.png" alt="logoTm" width="160" height="90">
+        <div class="container">
 
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-                        <span class="navbar-toggler-icon"></span>
-                </button>
+            <div>
+                <a class="navbar-brand" href="./index.html">
+                  <img src="./images/logo.png" height="75px" width="75px" alt="logotm">
+                </a>
+            </div>     
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+            <ul class="navbar-nav menu">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+            </ul>
 
             </div>
 
-			<div id="MenuNavegacion" class="collapse navbar-collapse">
 
-				<ul class="navbar-nav ms-3">
-					    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#Servicios">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#Nosotros">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#Galeria">Galeria</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#Contacto">Contacto</a></li>
-				</ul>
+            <div class="container-boton">
+                <a href="https://api.whatsapp.com/send?phone=1151272233&text=Hola, Quiero averiguar por un presupuesto!" target="_blank">
+                    <img class="boton" src="./images/redes/social_whatsapp.png" alt="logowpp">
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
 
 
-			</div>
-
-		</nav>
-
-	</div>
 
 
 
@@ -59,7 +78,7 @@
 
     <main id="home">   
         <section class="titulo">
-            <h1 class="titulo__principal">TM Producciones.</h1>  
+            <h1 class="titulo__principal animate__animated animate__fadeInDown">TM Producciones.</h1>  
             <span>Creando experiencias únicas para que las disfrutes con nosotros</span>
 
         </section>
@@ -146,36 +165,64 @@
 
         <!--Empieza Contacto-->
 
-        <section class="contacto" id="Contacto">
-            <h2>Contacto</h2>        
- 
-   
-            <div>
-                <p>Contactá con Nosotros. Resolvemos cualquier duda que tengas.</p>
-                <a href="https://goo.gl/maps/7HpJMKQNSW9Nbd8z8" target="_blank">Mansilla y Aguero</a>
-                <a href="mailto:fausto_mariani@hotmail.com" target="_blank">fausto_mariani@hotmail.com</a>
-                <a href="https://wa.me/541151272233" target="_blank">Nuestro Whats App</a>
-            
-            </div>
+        <section id="Contacto">
+            <h2>Contacto</h2>  
+            <div class="container formulario">
+
+                <div class="form">
+    
+                    <div class="form__info">
+                        <h3>Contactá con Nosotros!</h3>
+                        <p>Resolvemos cualquier duda que tengas.</p>
+
+                        <div class="form__info__contact">
+                            <a href="https://goo.gl/maps/7HpJMKQNSW9Nbd8z8" target="_blank">Mansilla y Aguero</a>
+                            <a href="mailto:fausto_mariani@hotmail.com" target="_blank">fausto_mariani@hotmail.com</a>
+                            <a href="https://wa.me/541151272233" target="_blank">Nuestro Whats App</a>
+                        </div>
+
+                        <div class="form__info_redes">
+                            <p>Nuestras Redes:</p>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/tm_producciones/"> <img src="./images/redes/social_instagram_3.png"width="45" height="45"></a>
+                                <a href="https://www.facebook.com/TitoMarianiProducciones"> <img src="./images/redes/social_facebook_fb_35.png"width="45" height="45"></a>
+                                <a href="https://twitter.com/home"> <img src="./images/redes/social_Twitter_38.png"width="45" height="45"></a>
+                                <a href="https://www.youtube.com/"> <img src="./images/redes/social_youtube_23.png"width="45" height="45"></a>
+                            </div>
+                        </div>
+
+                    
+                    </div>
+                
+                    <div class="form__contact">
+                        <h3>Contanos!</h3>
+
+                        <div class="container">
+                            <form action="" method="get">
+
+                                <input type="text" name="nombre y apellido" placeholder="Nombre y apellido">
+                                <input type="email" name="mail" placeholder="Email" required>
+                                <input type="number" name="telefono" minlength="8" placeholder="Telefono" required>
+                                <input class="input__text" type="text" name="comentarios" placeholder="Ingrese un comentario">
         
-            <div>
-                <form action="" method="get">
+                                <input type="submit" value="Enviar" class="input__boton" class="input__boton"> 
+        
+                            </form>
 
-                <input type="text" name="nombre y apellido" placeholder="Nombre y apellido">
-                <input type="email" name="mail" placeholder="Email" required>
-                <input type="number" name="telefono" minlength="8" placeholder="Telefono" required>
-                <input type="text" name="comentarios" placeholder="Ingrese un comentario">
+                        </div>
 
-                <input type="submit" value="Enviar"> 
 
-                </form>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
 
-            <!--Termina Contacto-->
 
-        </section>
+
 
 
 
@@ -225,7 +272,10 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 
 
