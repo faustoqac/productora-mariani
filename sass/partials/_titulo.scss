@@ -1,0 +1,23 @@
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    background: linear-gradient(to bottom, #000, #747474);
+    height: 10rem; 
+    margin-top: 9rem;
+    
+
+ 
+ 
+    h1 {
+        margin-left: 4rem;
+        font-size: 4em;
+    }
+ 
+ 
+    span {
+    margin-left: 8rem;
+    }
+
+}

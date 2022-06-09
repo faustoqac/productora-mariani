@@ -1,0 +1,28 @@
+nav {
+ 
+    background-color: #747474;
+       }
+
+
+.menu li {
+          padding: 0 1rem;
+          text-align: center;
+          width: max-content;
+          cursor: pointer;
+          text-decoration: none;
+          transition: all 0.3s ease 0s;
+       
+      
+
+            &:hover {
+                border-radius: 2rem;
+                background-color: #000;
+ 
+ 
+            }
+}
+
+.navbar-nav {
+ align-items: center;
+}
+

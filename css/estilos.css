@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-* {
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
+
+
+/* * {
     Margin:0;
     padding:0;
     box-sizing: border-box;
@@ -16,7 +18,7 @@
 
  img {
     width: 100%;
- }
+ } */
 
  
    
@@ -24,7 +26,7 @@
    
 
 
-   nav {
+   /* nav {
  
          background-color: #747474;
             }
@@ -52,8 +54,8 @@
    }
 
 
-   /* BOTON WHATS APP */
-      .container-boton{
+   BOTON WHATS APP */
+      /* .container-boton{
          background-color: #2e6329;
          border: 1px solid #fff;
          position: fixed;
@@ -82,7 +84,7 @@
          100%{
             box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
          }
-      }
+      } */
 
 
    /* TERMINA FORMATO HEADER */
@@ -91,7 +93,7 @@
  /* FORMATO MAIN */
 
 
- main {
+ /* main {
    background-image: linear-gradient(to bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
    width: 100%;
    padding-top: auto;
@@ -126,13 +128,13 @@ h2 {
    width: 100%;
    margin-top: 1rem;
 
-}
+} */
 
 
 
 /* FORMATO BANNER TITULO */
 
-.titulo {
+/* .titulo {
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
@@ -152,7 +154,7 @@ h2 {
 
 .titulo span {
    margin-left: 8rem;
-}
+} */
 
 /* TERMINA FORMATO BANNER TITULO */
 
@@ -162,7 +164,7 @@ h2 {
 
 /* FORMATO SERVICIOS */
 
-.service {
+/* .service {
 width: 100%;
 display: flex;
 justify-content: space-evenly;
@@ -206,7 +208,7 @@ justify-content: space-evenly;
    
 
 }
-
+ */
 
 /* TERMINA FORMATO SERVICIOS */
 
@@ -216,21 +218,21 @@ justify-content: space-evenly;
 
 
 /* FORMATO NOSOTROS */
-.nosotros {
+/* .nosotros {
    background-color: #c4c4c4;
    text-align: justify;
 }
 
 .nosotros p {
    margin: 10px;
-}
+} */
 
 /* TERMINA FORMATO NOSOTROS */
 
 
 /* FORMATO GALERIA */
 
-.galeria {
+/* .galeria {
    display: grid;
    grid-template-columns: repeat(12, 1fr);
    grid-template-rows: repeat(3, 1fr);
@@ -292,7 +294,7 @@ justify-content: space-evenly;
    grid-column: 1 / 9 ;
    
    
-}
+} */
 
 /* TERMINA FORMATO GALERIA */
 

@@ -1,0 +1,25 @@
+.container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 4rem;
+    right: 4rem;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+ 
+
+   &:hover{
+    transform: scale(1.1);
+    padding: 0.5rem;
+    
+   }
+}
+
+.boton{
+    width: 50px;
+    transition: ease 1s;
+}
+
+
