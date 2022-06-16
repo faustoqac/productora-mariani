@@ -1,0 +1,130 @@
+/* FORMATO CONTACTO */
+
+.formulario {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+
+ .form {
+    width: 100%;
+    max-width: 1200px;
+    background-color: map-get($colors , color-light );
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px black;
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 10rem;
+    margin-left: 10rem;
+
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      padding: 2.3rem 2.2rem;
+      position: relative;
+      background-image: linear-gradient(120deg, #333, #000) !important;
+      position: relative;
+      color: #FFFFFF;
+   }
+
+ 
+   &__info {
+      display: flex;
+      flex-direction: column;
+      padding: 2.3rem 2.2rem;
+      position: relative;
+      justify-content: space-between;
+   
+      &_redes {
+         display: flex;
+         flex-direction: column;
+         margin-top: 4rem;
+         align-items: center;
+
+      }
+   
+   
+      &__contact {
+         display: flex;
+         flex-direction: column;
+         margin-left: 4rem;
+      
+
+         & a {
+            margin-top: 1rem;
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+         }
+      }
+
+   }
+
+
+}
+
+
+
+ 
+ .container form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+ }
+ 
+
+
+
+
+ .container form input {
+    margin: 1rem;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+ }
+ 
+ .input__text {
+    min-height: 15rem;
+ }
+ 
+ .input__boton {
+    width: max-content;
+ }
+ .input__boton:hover {
+    background-color: #747474;
+ }
+ 
+
+//  RESPONSIVE RULES
+
+@media screen and (max-width: 768px ) {
+
+   .form {
+      display: flex;
+      flex-direction: column;
+
+   
+
+      &__info {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+ 
+}

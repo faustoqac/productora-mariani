@@ -1,12 +1,14 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 
 
 
+@import "./misc/variables";
+@import "./misc/mixins";
 @import "./misc/animations";
 @import "./misc/normalize";
+@import "./misc/gralmediaqueries";
 
 
 
@@ -14,6 +16,8 @@
 @import "./partials/footer";
 @import "./partials/whatsappboton";
 @import "./partials/titulo";
+@import "./partials/social";
+@import "./partials/form";
 
 
 

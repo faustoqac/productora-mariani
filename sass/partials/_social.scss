@@ -1,0 +1,39 @@
+// Redes Sociales
+
+.redes {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #757575;
+
+    &--backcolor {
+      @extend .redes;
+      background-color: map-get($colors , color-light );;
+
+    }
+    
+    & img:hover {
+      transition: 2s;
+      transform: rotateY(360deg);
+
+    }
+
+
+    & ul {
+      display: flex;
+      
+    }
+
+
+}
+
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+

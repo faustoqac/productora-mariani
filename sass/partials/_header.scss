@@ -1,6 +1,6 @@
 nav {
  
-    background-color: #747474;
+    background-color: map-get($colors , color-principal );
        }
 
 
@@ -16,7 +16,7 @@ nav {
 
             &:hover {
                 border-radius: 2rem;
-                background-color: #000;
+                background-color: map-get($colors , color-dark );
  
  
             }

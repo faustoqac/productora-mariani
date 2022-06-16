@@ -1,0 +1,37 @@
+// MEDIA QUERIES GENERALES
+
+@media screen and (max-width: 768px ) {
+
+
+
+    .navbar {
+       display: flex;
+       flex-direction: row;  
+    }
+ 
+    .logo {
+       margin-left: 0;
+       height: 6rem;
+       width: 12rem;
+     
+       
+    }
+ 
+    .botonwpp {
+       margin-right: 0;
+       padding: 1rem 1rem;
+    }
+ 
+}
+
+
+@media screen and (max-width: 480px ) {
+ 
+   main {
+      background-color: #c4c4c4;
+   }
+
+   .titulo h1 {
+      font-size: 3em;
+   }
+}
