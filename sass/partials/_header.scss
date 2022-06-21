@@ -4,7 +4,12 @@ nav {
        }
 
 
-.menu li {
+.menu {
+
+    font-size: $text-medium;
+
+
+    li {
           padding: 0 1rem;
           text-align: center;
           width: max-content;
@@ -20,6 +25,7 @@ nav {
  
  
             }
+    }
 }
 
 .navbar-nav {

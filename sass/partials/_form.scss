@@ -3,7 +3,7 @@
 .formulario {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -13,7 +13,6 @@
 
  .form {
     width: 100%;
-    max-width: 1200px;
     background-color: map-get($colors , color-light );
     border-radius: 10px;
     box-shadow: 0 0 20px 1px black;
@@ -23,6 +22,7 @@
     grid-template-columns: repeat(2, 1fr);
     margin-right: 10rem;
     margin-left: 10rem;
+    min-width: 25rem;
 
 
     &__contact {
@@ -42,6 +42,10 @@
       padding: 2.3rem 2.2rem;
       position: relative;
       justify-content: space-between;
+
+      p {
+         font-size: $text-small;
+      }
    
       &_redes {
          display: flex;

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss sass/index.scss css/index.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-      },
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

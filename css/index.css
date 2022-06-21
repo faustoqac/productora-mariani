@@ -52,7 +52,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 100rem;
   min-width: 32rem; }
 
 h2 {
@@ -63,7 +62,11 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  font-size: 3em; }
+
+h3 {
+  font-size: 3em; }
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -86,16 +89,18 @@ h2 {
 nav {
   background-color: #747474; }
 
-.menu li {
-  padding: 0 1rem;
-  text-align: center;
-  width: max-content;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease 0s; }
-  .menu li:hover {
-    border-radius: 2rem;
-    background-color: #000; }
+.menu {
+  font-size: 2em; }
+  .menu li {
+    padding: 0 1rem;
+    text-align: center;
+    width: max-content;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease 0s; }
+    .menu li:hover {
+      border-radius: 2rem;
+      background-color: #000; }
 
 .navbar-nav {
   align-items: center; }
@@ -145,10 +150,17 @@ nav {
   height: 10rem;
   margin-top: 9rem; }
   .titulo h1 {
-    margin-left: 4rem;
+    padding: 0 4rem;
     font-size: 4em; }
   .titulo span {
-    margin-left: 8rem; }
+    margin-left: 8rem;
+    font-size: 2em; }
+
+@media screen and (max-width: 430px) {
+  .titulo h1 {
+    font-size: 2em; }
+  .titulo span {
+    font-size: 1.3em; } }
 
 .redes, .redes--backcolor {
   display: flex;
@@ -156,13 +168,17 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #757575; }
+  .redes p, .redes--backcolor p {
+    font-size: 2em;
+    margin: 1rem; }
   .redes--backcolor {
     background-color: #f2f2f2; }
   .redes img:hover, .redes--backcolor img:hover {
     transition: 2s;
     transform: rotateY(360deg); }
   .redes ul, .redes--backcolor ul {
-    display: flex; }
+    display: flex;
+    margin: 1rem; }
 
 .map {
   display: flex;
@@ -174,7 +190,7 @@ nav {
 .formulario {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -182,7 +198,6 @@ nav {
 
 .form {
   width: 100%;
-  max-width: 1200px;
   background-color: #f2f2f2;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px black;
@@ -191,7 +206,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-right: 10rem;
-  margin-left: 10rem; }
+  margin-left: 10rem;
+  min-width: 25rem; }
   .form__contact {
     display: flex;
     flex-direction: column;
@@ -206,6 +222,8 @@ nav {
     padding: 2.3rem 2.2rem;
     position: relative;
     justify-content: space-between; }
+    .form__info p {
+      font-size: 1.3em; }
     .form__info_redes {
       display: flex;
       flex-direction: column;
@@ -264,7 +282,7 @@ nav {
   .service__card {
     display: flex;
     width: 32rem;
-    height: 36rem;
+    height: 48rem;
     margin: 2rem;
     border-radius: 2rem;
     overflow: hidden;
@@ -277,7 +295,8 @@ nav {
     .service__card img {
       width: 100%;
       height: 100%;
-      border-radius: 2rem; }
+      border-radius: 2rem;
+      object-fit: cover; }
     .service__card a {
       display: flex;
       flex-direction: column;
@@ -288,9 +307,20 @@ nav {
 
 .nosotros {
   background-color: #747474;
-  text-align: justify; }
+  text-align: justify;
+  color: #f2f2f2; }
+  .nosotros h3 {
+    padding: 0 4rem; }
+  .nosotros span {
+    padding: 0 6rem;
+    font-size: 2em;
+    display: inline-block; }
   .nosotros p {
-    margin: 10px; }
+    padding: 0 8rem;
+    margin: 1rem;
+    font-size: 1.3em; }
+  .nosotros__info {
+    margin: 1rem; }
 
 .galeria {
   display: grid;
@@ -325,14 +355,14 @@ nav {
       width: 100%;
       height: 100%; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .service {
     display: flex;
     flex-direction: column;
     align-items: center; }
     .service__card {
       display: flex;
-      width: 90%;
+      width: 70%;
       margin: 0.4rem;
       border-radius: 2rem;
       overflow: hidden;

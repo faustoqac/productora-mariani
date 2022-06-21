@@ -11,13 +11,33 @@
  
  
     h1 {
-        margin-left: 4rem;
-        font-size: 4em;
+        padding: 0 $spacing-small;
+        font-size: $text-title;
     }
  
  
     span {
-    margin-left: 8rem;
+    margin-left: $spacing-large;
+    font-size: $text-medium;
+    }
+
+}
+
+
+//  RESPONSIVE RULES
+
+@media screen and (max-width: 430px ) {
+
+    .titulo {
+    
+        h1 {
+            font-size: $text-medium;
+        }    
+
+        span {
+            font-size: $text-small;
+        }
+
     }
 
 }

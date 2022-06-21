@@ -41,7 +41,6 @@ a {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   max-width: 100rem;
    min-width: 32rem;
 }
 
@@ -54,7 +53,12 @@ h2 {
    align-items: center;
    width: 100%;
    margin-top: 1rem;
+   font-size: $text-large;
 
+}
+
+h3 {
+   font-size: $text-large;
 }
 
 

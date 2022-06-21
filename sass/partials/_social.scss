@@ -7,6 +7,11 @@
     justify-content: space-around;
     background-color: #757575;
 
+    p {
+      font-size: $text-medium;
+      margin: $spacing-xsm;
+    }
+
     &--backcolor {
       @extend .redes;
       background-color: map-get($colors , color-light );;
@@ -22,6 +27,7 @@
 
     & ul {
       display: flex;
+      margin: 1rem;
       
     }
 
