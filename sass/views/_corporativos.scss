@@ -1,0 +1,15 @@
+.corpocard {
+    display: flex;
+    flex-direction: column;
+    border-radius: $spacing-base;
+    margin-top: $spacing-small;
+
+
+    &__card {
+        background-color: map-get($colors , color-secondary );
+        padding: 2rem;
+        border-radius: 2rem;
+        box-shadow: 1rem 1rem;
+        margin-top: $spacing-small;
+    }
+}

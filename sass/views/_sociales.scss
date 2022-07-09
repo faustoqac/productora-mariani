@@ -1,0 +1,126 @@
+.socialcard {
+    display: flex;
+    flex-direction: column;
+    border-radius: $spacing-base;
+    margin-top: $spacing-small;
+
+    &__card {
+        background-color: map-get($colors , color-secondary );
+        padding: 2rem;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        box-shadow: 1rem 1rem;
+        margin-top: $spacing-small;
+
+        &__content {
+
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 1rem;
+
+
+            &__img{
+
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    max-width: 25rem;
+                    border-radius: $spacing-base;
+                    object-fit: cover;
+                    box-shadow: 0 0 1.3rem 1px black;
+                }
+
+
+            }
+
+
+
+            &__info {
+                background-color: map-get($colors , color-light );
+                border-radius: $spacing-base;
+                box-shadow: 0 0 1.3rem 1px black;
+
+                h4{
+                    font-size: $text-large;
+                    
+                 }
+                 
+
+             
+                p{
+                    font-size: $text-small
+
+                }
+
+
+
+
+            }
+
+        }
+
+
+    }
+
+
+}
+
+.reverse {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px ) {
+
+    .socialcard {
+         
+        &__card {
+
+                
+    
+            &__content {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;   
+
+
+                img {
+                    width: none;
+                }
+     
+    
+            }
+        }
+    
+    
+    }
+
+
+    .row>* {
+        width: auto;
+        flex-shrink: 0;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
+    }
+}
+
+
+

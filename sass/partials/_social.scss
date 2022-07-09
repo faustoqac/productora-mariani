@@ -5,7 +5,7 @@
     margin-top: 2rem;
     align-items: center;
     justify-content: space-around;
-    background-color: #757575;
+    
 
     p {
       font-size: $text-medium;
@@ -31,6 +31,39 @@
       
     }
 
+
+}
+
+.social {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #757575;
+
+  p {
+    font-size: $text-medium;
+    margin: $spacing-xsm;
+  }
+
+  &--backcolor {
+    @extend .redes;
+    background-color: map-get($colors , color-light );;
+
+  }
+  
+  & img:hover {
+    transition: 2s;
+    transform: rotateY(360deg);
+
+  }
+
+
+  & ul {
+    display: flex;
+    margin: 1rem;
+    
+  }
 
 }
 

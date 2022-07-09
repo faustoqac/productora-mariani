@@ -15,12 +15,13 @@ nav {
           width: max-content;
           cursor: pointer;
           text-decoration: none;
+          border-radius: 4rem;
           transition: all 0.3s ease 0s;
        
       
 
             &:hover {
-                border-radius: 2rem;
+               
                 background-color: map-get($colors , color-dark );
  
  
@@ -31,4 +32,68 @@ nav {
 .navbar-nav {
  align-items: center;
 }
+
+// 
+
+
+.panel {
+
+    display: flex;
+    justify-content: space-evenly;
+    font-size: $text-medium;
+    background-color: map-get($colors, color-principal);
+    margin-top: 2rem;
+    border-radius: 2rem;
+    align-items: center;
+    width: 80%;
+
+
+    li {
+
+          padding: 0 1rem;
+          text-align: center;
+          width: max-content;
+          cursor: pointer;
+          text-decoration: none;
+          border-radius: 4rem;
+          transition: all 0.3s ease 0s;
+       
+      
+
+            &:hover {
+               
+                background-color: map-get($colors , color-dark );
+ 
+ 
+            }
+        }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: map-get($colors, color-secondary );
+
+    }
+
+}
+
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 768px ) {
+
+
+    .panel {
+
+        a {
+            font-size: 0.5em;
+        }  
+
+        
+    }
+
+}
+
+
+
 
